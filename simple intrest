@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void)
+{
+	float p, r,i=0;
+	int t;
+	printf("enter p ,r,t");
+	scanf("%f %f %d",&p,&r,&t);
+	i=p*t*r/100;
+	printf("the intrest is %f",i);
+	return 0;
+}

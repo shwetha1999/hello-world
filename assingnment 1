@@ -17,3 +17,27 @@ int main()
     
 output:    enter  number
 area is 16
+
+
+
+
+
+//area of a square
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,area;
+	printf("enter  number\n");
+	scanf("%d %d",&a,&b);
+	area=a*b;
+	printf("area  of rectangle is %d",area);
+	return 0;
+	
+	
+}
+input:4 5
+output:
+
+enter  number
+area  of rectangle is 20

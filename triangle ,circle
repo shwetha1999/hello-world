@@ -105,3 +105,41 @@ Success	#stdin #stdout 0s 4300KB
 6 100
 Success	#stdin #stdout 0s 4396KB //without brackets
 6 5
+
+
+
+
+
+logical opperator
+
+#include <stdio.h>
+int main(void)
+{
+	int a=10,b=20,c=30,d=40;
+	if(a<b && b>c)
+	printf(" a is less then b and b is  greater then c\n");
+	else 
+	printf("AND condition is not satisfied\n");
+	
+	if(a<b || b>c)
+	printf(" a is less then b and   b is  greater then c\n");
+	else 
+	printf("OR condition is not satisfied\n");
+	
+	if(!a)
+	printf(" a is zero\n");
+	else 
+	printf("a is not zero\n");
+	return 0;
+}
+
+o/p
+AND condition is not satisfied
+ a is less then b and   b is  greater then c
+a is not zero
+
+
+
+
+
+}

@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<math.h>
+int main(void) 
+{
+	int a,b,add,sub,mul,div;
+	printf("enter the two numbers");
+	scanf("%d %d",&a,&b);
+	add=a+b;
+	sub=a-b;
+	mul=a*b; 
+	div=a/b;
+	printf("sum is= %d",add);
+	printf("sub is= %d",sub);
+	printf("mul is= %d",mul);
+	printf("div is= %d",div);	
+	return 0;
+}

@@ -41,4 +41,34 @@ enter  number
 area  of circle is 28.260000
 
 
+//area of a circle
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int r;
+	float area,circum;
+	printf("enter  number\n");
+	scanf("%d",&r);
+	area=3.14*r*r;
+	printf("area  of circle is %f\n",area);
+	circum=2*3.14*r;
+	printf("circumference of a circle is %f\n",circum);
+	
+	return 0;
+	
+	
+}
+
+input:3
+output:
+enter  number
+area  of circle is 28.260000
+circumference of a circle is 18.840000
+
+
+
+
+
+
 

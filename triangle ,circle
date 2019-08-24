@@ -70,5 +70,20 @@ circumference of a circle is 18.840000
 
 
 
+printing without using pf and sf
 
 
+#include <stdio.h>
+
+int main(void)
+{
+
+	char d;
+	while((d=getchar())!=EOF)
+	putchar(d);
+	
+	return 0;
+}
+input:hello world
+
+output:hello world

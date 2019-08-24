@@ -17,3 +17,28 @@ input:4 5
 output:
 enter  number
 area  of trianglre is 10
+
+
+
+//area of a circle
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int r;
+	float area;
+	printf("enter  number\n");
+	scanf("%d",&r);
+	area=3.14*r*r;
+	printf("area  of circle is %f",area);
+	return 0;
+	
+	
+}
+input: 3
+output:
+enter  number
+area  of circle is 28.260000
+
+
+

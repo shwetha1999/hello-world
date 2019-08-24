@@ -1,0 +1,19 @@
+//area of a square
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,area;
+	printf("enter  number\n");
+	scanf("%d",&a);
+	area=a*a;
+	printf("area is %d",area);
+	return 0;
+    }
+    
+    
+    input:4
+    
+    
+output:    enter  number
+area is 16

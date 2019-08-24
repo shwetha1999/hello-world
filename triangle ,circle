@@ -87,3 +87,21 @@ int main(void)
 input:hello world
 
 output:hello world
+
+
+
+
+comma operator with()
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int a=5,b;
+	b=(a++,100);
+	printf("%d %d",a,b);
+	return 0;
+}
+Success	#stdin #stdout 0s 4300KB
+6 100
+Success	#stdin #stdout 0s 4396KB //without brackets
+6 5

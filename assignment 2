@@ -25,13 +25,14 @@ sum of odd numbers is 9
 
 
 
+
 #include <stdio.h>
 
 int main(void)
 {
 	int rev=0,n,rem;
 	printf("enter the number\n");
-	scanf("%d",n);
+	scanf("%d",&n);
 	while(n > 0)
 	{
 		rem=n%10;
@@ -39,6 +40,9 @@ int main(void)
 		n=n/10;
 		
 	}
-	
+	printf("the reverse of num is %d",rev);
 	return 0;
 }
+
+enter the number 123
+the reverse of num is 321

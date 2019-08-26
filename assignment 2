@@ -91,3 +91,46 @@ int main(void)
 
 enter two number 2 3
 the swapped numbers are 3 2
+
+
+
+
+//swapping elemnts without using third variable
+#include <stdio.h>
+
+int main(void)
+{
+	int a,b;
+	printf("enter two number\n");
+	scanf("%d %d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    
+	printf("the swapped numbers are %d %d",a,b);
+	return 0;
+}
+
+
+enter two number 2 3
+the swapped numbers are 3 2
+
+
+//swapping elemnts without using third variable
+#include <stdio.h>
+
+int main(void)
+{
+	int a,b;
+	printf("enter two number\n");
+	scanf("%d %d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    
+	printf("the swapped numbers are %d %d",a,b);
+	return 0;
+}
+
+enter two number 3 2
+the swapped numbers are 3 2

@@ -69,3 +69,25 @@ int main(void)
 enter the number 100
 month=3
 days =10
+
+
+
+
+
+//swapping elemnts with using third variable
+#include <stdio.h>
+
+int main(void)
+{
+	int a,b,temp;
+	printf("enter two number\n");
+	scanf("%d %d",&a,&b);
+    temp=a;
+    a=b;
+    b=temp;
+	printf("the swapped numbers are %d %d",a,b);
+	return 0;
+}
+
+enter two number 2 3
+the swapped numbers are 3 2

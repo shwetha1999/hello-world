@@ -20,3 +20,24 @@ int main(void)
 enter a value of a
 sum of even numbers is 0
 sum of odd numbers is 1
+
+
+
+
+#include <stdio.h>
+
+int main(void)
+{
+	int rev=0,n,rem;
+	printf("enter the number\n");
+	scanf("%d",n);
+	while(n > 0)
+	{
+		rem=n%10;
+		rev=rev*10+rem;
+		n=n/10;
+		
+	}
+	
+	return 0;
+}

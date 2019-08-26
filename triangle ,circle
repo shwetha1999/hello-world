@@ -171,3 +171,41 @@ a^b = 12
 b<<1 = 18
 b>>1 = 4
 
+
+
+
+
+#include<stdio.h>
+#include<math.h>
+int main(void) {
+float a[10];
+float sum=0,avg=0;
+int i;
+printf("enter ten numbers\n");
+for(i=0;i<10;i++)
+{
+scanf("%f",&a[i]);
+sum=sum+a[i];
+printf("%.3f\n",sum);
+}
+avg=sum/10.0;
+printf("the average of 10 numbers is %.3f\n",avg);
+return 0;
+}
+
+
+input:1 2 3 4 5 6 7 8 9 10
+output:enter ten numbers
+1.000
+3.000
+6.000
+10.000
+15.000
+21.000
+28.000
+36.000
+45.000
+55.000
+the average of 10 numbers is 5.500
+
+

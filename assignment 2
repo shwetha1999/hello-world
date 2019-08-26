@@ -10,16 +10,17 @@ int main(void)
 		if(i %2 ==0)
 		even =even+i;
 		else
-		odd=odd+i;
+		odd=odd+i; 
+				}
 		printf("sum of odd numbers is %d\n",odd);
 		printf("sum of even numbers is %d\n",even);
 				return 0;
 	}
-}
 
-enter a value of a
-sum of even numbers is 0
-sum of odd numbers is 1
+input:5
+  o/p :enter a value of a
+sum of even numbers is 6
+sum of odd numbers is 9
 
 
 

@@ -1,0 +1,14 @@
+// counting the number of digits
+#include<stdio.h>
+int main (void)
+{
+	int n,c=0;
+	printf("enter the number \n ");
+	scanf("%d",&n);
+	for(;n>0;n=n/10)
+	c++;
+	printf("the length is %d",c)
+	return 0;
+}
+input 12345
+output the length is 

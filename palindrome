@@ -1,0 +1,36 @@
+
+
+int main(void)
+{
+	char a[10];
+int	i=0,j=0,c=0,flag=0;
+	printf("enter a array\n ");
+	scanf(" %s",&a[i]);
+	while(a[i]!='\0')
+	{
+		c++;
+		i++;
+	}
+	printf("the length of the string is %d",c);
+	for(i=0,j=c-1;i<j;i++,j--)
+	{
+		if(a[i]!=a[j])
+	{	flag=1;
+		break;
+	}
+	}
+	
+	if(flag==1)
+	printf("it is not palindrome ");
+	else
+	printf("it is a palindrome");
+	return 0;
+}
+ source code    close shortcuts fullscreen 
+  
+ 
+enter a array shwetha
+ the length of the string is 7it is not palindrome 
+Success	#stdin #stdout 0s 4316KB
+enter a array madam
+ the length of the string is 5it is a palindrome

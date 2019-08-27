@@ -1,0 +1,20 @@
+// counting the number of digits
+#include<stdio.h>
+int main (void)
+{
+	int n,r=0,sum=0;
+	printf("enter the number \n ");
+	scanf("%d",&n);
+	while(n>0)
+	{
+	r=	n%10;
+		sum=sum+r;
+	n=	n/10;
+		
+	}
+	
+	printf("the sum is %d",sum);
+	return 0;
+}
+input 12345
+output the sum is 15

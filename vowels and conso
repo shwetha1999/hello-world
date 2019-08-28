@@ -23,3 +23,51 @@ int main(void)
 enter a string shwetha
 the numbers of vovels are 2
 the numbers of consonents are 5
+
+
+
+
+
+
+#include <stdio.h>
+
+int main(void) 
+{
+	char a[100];
+	int i,v=0,c=0,n;
+	printf("enter a string\n");
+	scanf("%s",&a);
+	n=strlen(a);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='A'||
+		a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
+	{
+		v++;
+		printf("%c\t",a[i]);
+	}
+	}
+	printf("\n");
+	for(i=0;i<n;i++)
+	{
+		if(a[i]!='a'&&a[i]!='e'&&a[i]!='i'&&a[i]!='o'&&a[i]!='u'&&a[i]!='A'&&
+		a[i]!='E'&&a[i]!='I'&&a[i]!='O'&&a[i]!='U')
+	{
+		c++;
+		printf("%c\t",a[i]);
+	}
+	}
+	printf("\n");
+	printf("the number of vowels is %d\n",v);
+	printf("the number of consonents is %d\n",c);
+}
+
+
+
+
+
+enter a string shwetha
+e	a	
+s	h	w	t	h	
+the number of vowels is 2
+the number of consonents is 5

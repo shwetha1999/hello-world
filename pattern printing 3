@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int i,j;
+	char c=65;
+for(i=0;i<5;i++)
+{
+	for(j=0;j<5;j++)
+{
+	printf("%c\t",c);
+	c++;
+}
+	
+
+printf("\n");
+
+	
+}
+return 0;
+}
+
+
+A	B	C	D	E	
+F	G	H	I	J	
+K	L	M	N	O	
+P	Q	R	S	T	
+U	V	W	X	Y	

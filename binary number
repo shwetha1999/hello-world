@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) 
+{
+	int n,count=0;
+	scanf("%i",&n);
+	while(n)
+	{
+		count=count+(n&1);
+		n=n>>1;
+	}
+	
+printf("%d",count);	
+	return 0;
+}
+
+
+
+
+input:15
+output:4

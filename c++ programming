@@ -18,3 +18,27 @@ int main()
 
 enter two number 1 2
  the sum of 1 and 2 is: 3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  boolian programm
+  
+  
+  #include <iostream>
+using namespace std;
+
+int main()
+{
+bool x=true;
+
+	cout<<" boolian is "<<x <<endl;
+	return 0;
+}
+
+
+
+output: boolian is 1

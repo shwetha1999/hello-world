@@ -1,0 +1,20 @@
+sum of two numbers:
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	int b;
+	 int sum;
+	cout<<"enter two number" <<endl;
+	cin >> a >>b;
+	 sum=a+b;
+	cout<<" the sum of "  <<  a << " and " << b << " is: " <<sum <<"\n\n";
+	return 0;
+}
+
+
+enter two number 1 2
+ the sum of 1 and 2 is: 3

@@ -42,3 +42,30 @@ bool x=true;
 
 
 output: boolian is 1
+
+
+
+
+
+string concatenation
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() 
+
+{
+	string str1=" hello ";
+		string str2=" world ";
+		string str= str1 + str2;	
+		cout<< " the string is "<<str <<endl;
+	
+	return 0;
+}
+
+
+result
+hello world

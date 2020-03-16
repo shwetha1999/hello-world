@@ -5,7 +5,7 @@ int main()
    
     
     printf("enter a string\n");
-    gets(fullname);
+    gets(fullname);// gets fun is used to read whole string even after space
     printf("the fullname is %s ",fullname);
     
     
@@ -26,7 +26,7 @@ int main()
    
     
     printf("enter a number\n");
-    scanf("%s",&fullname);
+    scanf("%s",&fullname); //can get string upto space
     printf("the fullname is %s ",fullname);
     
     
@@ -51,12 +51,14 @@ int main()
     printf("enter a string\n");
   gets(a);
     printf("the string  is ");
-    puts(a);
+    puts(a);// print the whole string
 
     
     
     return 0;
 }
+
+
 
 #include <stdio.h>
 #include<string.h>
@@ -73,35 +75,11 @@ int main()
     return 0;
 }
 
-#include <stdio.h>
-#include<string.h>
-int main()
-{
-    char a[50];
-    printf("enter a string\n");
-  gets(a);
-    printf("the string  is ");
-    puts(a);
-
-    
-    
-    return 0;
-}
-
-#include <stdio.h>
-#include<string.h>
-int main()
-{
-    char a[50];
-    printf("enter a string\n");
-  gets(a);
-    printf("the string  is ");
-    puts(a);
-
-    
-    
-    return 0;
-}
 enter a string
 geeks for geeks
 the string is geeks for geeks
+
+
+getch    is used to entre a character ,it wont be displayed on screen and it will go to next line without prerssing og entre
+getchar is used to entre a character ,it will be displayed on screen and it willnot go to next line without prerssing  entre
+getche is used to entre a character ,it will be displayed on screen and it will go to next line without prerssing og entre

@@ -11,14 +11,14 @@ int main(void)
 		even =even+i;
 		else
 		odd=odd+i; 
-				}
+        }
 		printf("sum of odd numbers is %d\n",odd);
 		printf("sum of even numbers is %d\n",even);
-				return 0;
-	}
+				return 0; 
+		}
 
 input:5
-  o/p :enter a value of a
+  o/p :enter a value of a: 5
 sum of even numbers is 6
 sum of odd numbers is 9
 
@@ -116,21 +116,3 @@ enter two number 2 3
 the swapped numbers are 3 2
 
 
-//swapping elemnts without using third variable
-#include <stdio.h>
-
-int main(void)
-{
-	int a,b;
-	printf("enter two number\n");
-	scanf("%d %d",&a,&b);
-    a=a+b;
-    b=a-b;
-    a=a-b;
-    
-	printf("the swapped numbers are %d %d",a,b);
-	return 0;
-}
-
-enter two number 3 2
-the swapped numbers are 3 2

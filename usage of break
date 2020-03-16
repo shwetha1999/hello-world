@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("entre a num\n");
+    scanf("%d",&a);
+    while(a!=0)
+    {
+        if(a<0)
+        break;
+        printf("entre a num\n");
+    scanf("%d",&a);
+    }
+
+    return 0;
+}
+
+
+output:
+entre a num
+10
+entre a number
+2
+entre a num
+-12
+//loop isterminated 
+

@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{char fullname[50];
+   
+    
+    printf("enter a string\n");
+    gets(fullname);
+    printf("the fullname is %s ",fullname);
+    
+    
+    
+    return 0;
+}
+output:
+geeks for geeks
+the fullname is geeks for geeks

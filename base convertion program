@@ -1,3 +1,4 @@
+//decimal to binary
 #include<stdio.h>    
  
 int main(){  
@@ -25,3 +26,79 @@ return 0;
 output
 Enter the number to convert:10
 Binary of Given Number is=1010
+
+
+
+
+
+
+//binary to decimal
+
+#include<stdio.h>
+#include<math.h>
+ 
+int main()
+{
+	long int weight=1,n,decimal=0,rem;
+	printf("Enter any binary number: ");
+	scanf("%ld",&n);
+	printf("\nThe decimal conversion of %ld is ",n);
+	
+	while(n>0)
+	{
+	
+		rem=n%10;
+		decimal=decimal+rem*weight;
+		n=n/10;
+		weight=weight*2;
+	}
+	
+	printf("%ld",decimal);
+	
+	return 0;	
+}
+
+
+output:
+Enter any binary number:1010
+The decimal conversion of 1010 is 10
+
+
+//binary to octal
+
+#include<stdio.h>
+#include<math.h>
+ 
+int main()
+{
+	long int weight=1,n,decimal=0,rem,i=0,a[20];
+	printf("Enter any binary number: ");
+	scanf("%ld",&n);
+	printf("\nThe decimal conversion of %ld is ",n);
+	
+	while(n>0)
+	{
+	
+		rem=n%10;
+		decimal=decimal+rem*weight;
+		n=n/10;
+		weight=weight*2;// convert binary to decimal 
+	}
+	
+	while(decimal>0)
+
+{    
+a[i]=decimal% 10;
+decimal=decimal/8;
+i++;
+}    
+printf("\nBinary of Given Number is=");    
+for(i=i-1;i>=0;i--)    
+{    
+printf("%ld ",a[i]);
+}    
+	
+	
+	return 0;	
+}
+

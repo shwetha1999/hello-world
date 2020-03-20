@@ -2,11 +2,11 @@
 
 int main(void) 
 {
-	char a[20];
+	char a[26];
 	int i, v=0,c=0;
 	printf("enter a string\n");
 	scanf("%s",a);
-	if(a[i]=='a'a||[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
+	if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
 	{
 		v++;
 	}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+int i,j,n;
+for(i=0;i<5;i++)
+{
+
+    printf("entering the i loop\n");
+    for(i=0;i<2;i++)
+    {
+    printf("entering the j loop\n");
+    scanf("%d",&n);
+    if(n==0)
+        break;
+    }
+   if(n==0)
+    break;
+}
+
+printf("came out of  loop");
+
+return 0;
+}
+
+
+

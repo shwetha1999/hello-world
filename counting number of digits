@@ -12,3 +12,22 @@ int main (void)
 }
 input 12345
 output the length is 
+
+
+
+Alternative
+
+
+#include<stdio.h>
+int main()
+{
+int n,x;
+printf("enter a num\n");
+scanf("%d",&n);
+
+
+x=printf("%d",n);
+printf("\n");
+printf("%d",x);
+return 0;
+}

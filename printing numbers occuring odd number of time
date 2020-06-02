@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int n,i,j,count=0;
+int coin[100];
+printf("original number of coins\n");
+scanf("%d",&n);
+
+for(i=0;i<n-1;i++)
+scanf("%d",&coin[i]);
+printf(" elemnts of coins\n");
+for(i=0;i<n-1;i++)
+printf("%d ",coin[i]);
+printf("\n");
+for(i=0;i<n-1;i++)
+{
+    count=0;
+    for(j=0;j<n-1;j++)
+    {
+        if(coin[j]==coin[i])
+            count++;
+    }
+    if(count%2==1)
+    printf("%d\n",coin[i]);
+}
+
+
+
+  return 0;
+}
+
+
+output
+original number of coins
+5
+elemnts of coins
+1 1 2 3 
+2
+3

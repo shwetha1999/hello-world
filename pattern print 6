@@ -26,3 +26,37 @@ A	B	C	D
 A	B	C	
 A	B	
 A	
+
+
+
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,j,n,num;
+    printf("enter a num");
+    scanf("%d",&n);
+    num=n;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<num;j++)
+        {
+            printf(" * ");
+        }
+        num--;
+        printf("\n");
+    }
+    return 0;
+}
+
+
+output:
+enter a num 5
+* * * * *
+* * * *
+* * *
+* *
+*

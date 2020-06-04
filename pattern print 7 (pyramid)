@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int r,sp,n,num,print;
+    printf("enter a num");
+    scanf("%d",&n);
+    num=n;
+    for(r=1;r<=n;r++)
+    {
+        for(sp=1;sp<=num;sp++)
+        {
+            printf(" ");
+        }
+        num--;
+       for(print=1;print<=r;print++)
+        {
+            printf("%d ",r);//give space//
+        }
+        printf("\n");
+    }
+    return 0;
+}
+output:
+         1
+       2   2 
+  3   3   3   3
+4   4   4   4   4
+
+     
+     
+     
+     
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

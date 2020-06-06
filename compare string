@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+    int i,flag=0;
+   char s1[10]={"mypass"};
+   char s2[10];
+
+   printf("passward: ");
+   gets(s2);
+  for(i=0; s1[i]!='\0' && s2[i]!='\0' ;i++)
+  {
+      if(s1[i]!=s2[i])
+        flag=1;
+      break;
+  }
+  if(flag==1)
+  {
+      printf("not same");
+  }
+  else
+    printf(" same");
+   return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+    int i,flag=0;
+   char s1[10]={"mypass"};
+   char s2[10];
+
+   printf("passward: ");
+   gets(s2);
+  if(strcmp(s1,s2)==0)
+  flag=1;
+ if(flag==1)
+    printf("same");
+ else
+    printf("not same");
+   return 0;
+}

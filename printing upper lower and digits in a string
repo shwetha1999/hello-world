@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+int main ()
+{
+char str[40];
+int i,c1=0,c2=0,c3=0,c4=0;
+ printf("enter a string\n");
+ gets(str);
+ puts(str);
+ printf(" upper ");
+ for(i=0;str[i]!='\0';i++)
+ {
+     if(str[i]>=65 && str[i]<=90)
+     {
+         c1++;
+
+         printf("%c\t",str[i]);
+     }
+ }
+ printf(" \n");
+  printf(" lower ");
+  for(i=0;str[i]!='\0';i++)
+  {
+
+        if(str[i]>=97 && str[i]<=122)
+     {
+         c2++;
+
+         printf("%c\t",str[i]);
+     }
+  }
+   printf(" \n ");
+  printf(" digit ");
+
+for(i=0;str[i]!='\0';i++)
+{
+        if(str[i]>=48 && str[i]<=57)
+     {
+         c3++;
+
+         printf("%c\t",str[i]);
+     }
+}
+
+return 0;
+}
+

@@ -1,8 +1,10 @@
+
 #include <stdio.h>
 #define AND &&
 #define OR ||
 #define CON_1 (a>0 && b==0)
 #define CON_2 (a>0 || b>0)
+#define GREETING  printf(" not granted....");
 int main()
 {
    int a=10,b=20;
@@ -14,11 +16,11 @@ int main()
 
    if(a>0 OR b>0)
    {
-       printf(" not granted....");
+       GREETING
    }
    if(CON_1)
    {
-       printf(" not granted....");
+       printf("  granted....");
    }
     if(CON_2)
    {

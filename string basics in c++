@@ -6,10 +6,10 @@ int main()
     string name;// string is like data type
     name = {" desi programing "};
     cout<< name;
-
-
 }
 
+output:
+desi programing
 
 
 #include<iostream>
@@ -20,10 +20,155 @@ int main()
     string name(" desi programing ");// string is like data type
 
     cout<< name;
+}
+
+output:
+desi programing
 
 
+string lenght in c++
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1("shwetha"),s2;// string is like data type
+    s2.assign(s1);
+    cout<< s1.length()<<endl;
+    
+ output:
+ 7
+    
+    
+    
+ #include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1;
+    cout<< " enter a string "<<endl;
+    cin>> s1;// can gets string upto first space
+    cout << "good morning from " <<s1;
+}
+input : shwetha devang
+output:
+ good morning from shwetha
+
+
+to get full string
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1;
+    cout<< " enter a string "<<endl;
+    getline(cin,s1);//to get full string
+    cout << "good morning from " <<s1;
 }
 
 
 
+}
+input : shwetha devang
+output:
+ good morning from shwetha devang
 
+
+
+swapping two strings
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1,s2;
+   s1="apple ";
+   s2="oranges ";
+   cout << s1  <<s2  <<endl;
+   s1.swap(s2);
+    cout << s1  <<s2  <<endl;
+}
+
+ apple oranges
+ oranges apple
+ 
+
+
+
+
+
+finding position of sub string  (we can only find first substring)
+ #include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1("I love infinity war");
+    cout<< s1<<endl;
+    cout<< s1.find("in")<<endl;
+}
+output:
+I love infinity war
+7
+
+
+
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1("I love infinity war");
+    cout<< s1<<endl;
+    cout<< s1.replace(7,2,"un")<<endl;
+
+
+output:
+I love infinity war
+I love unfinity war
+
+
+
+
+
+
+printing sub string
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1("I love infinity war");
+    cout<< s1<<endl;
+    cout<< s1.substr(7,8)<<endl;
+}
+output:
+I love infinity war
+infinity
+
+
+
+
+errase a sstring
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1("I love infinity war");
+    cout<< s1<<endl;
+    cout<< s1.erase(15)<<endl;
+}
+output:
+output:
+I love infinity war
+I love infinity

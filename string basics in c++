@@ -105,7 +105,9 @@ int main()
 
 
 finding position of sub string  (we can only find first substring)
- #include<iostream>
+
+
+#include<iostream>
 #include<string>
 using namespace std;
 int main()
@@ -120,7 +122,7 @@ I love infinity war
 
 
 
-
+replace
 
 #include<iostream>
 #include<string>
@@ -219,4 +221,34 @@ input
 shwetha 
 h 
 devang
+output:
  shwetha h devang
+ 
+ 
+ 
+ #include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1,s2,s3;
+    cout<<" enter the first string "<< endl;
+    getline(cin,s1);
+    cout<<" enter the second string "<< endl;
+    getline(cin,s2);
+    cout<<" enter the third string string "<< endl;
+    getline(cin,s3);
+    s1+=s2+s3;
+    cout<< " the concatenated string is "<< s1 <<endl;
+
+
+}
+
+
+input
+shwetha 
+h 
+devang
+output:
+ shwetha h devang
+ 

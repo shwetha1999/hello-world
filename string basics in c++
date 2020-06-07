@@ -192,3 +192,31 @@ output:
 
 I love infinity war
 I love Indian infinity war
+
+
+
+
+
+concatenation
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string s1,s2,s3;
+    cout<<" enter the first string "<< endl;
+    getline(cin,s1);
+    cout<<" enter the second string "<< endl;
+    getline(cin,s2);
+    cout<<" enter the third string string "<< endl;
+    getline(cin,s3);
+    cout<< " the concatenated string is "<< s1+s2+s3 <<endl;
+
+
+}
+input
+shwetha 
+h 
+devang
+ shwetha h devang

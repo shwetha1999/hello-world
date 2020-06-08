@@ -1,0 +1,22 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    size_t index=0;
+    string s("geeks for geeks for geeks");
+    cout<< s<< endl;
+    while(true)// or for(index=0; s[index]!='\0' ;index=index+3)
+    {
+    index =s.find("geeks");
+    if(index==std::string::npos)
+    break;
+    s.replace(index,5,"myyyyyy");
+    index=index+7;
+
+    }
+    cout<< s<< endl;
+}
+output
+geeks for geeks for geeks
+myyyyyy for myyyyyy for myyyyyy

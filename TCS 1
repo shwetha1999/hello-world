@@ -1,0 +1,46 @@
+#include<string>
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{int i;
+    string s1,s,s3;
+    cout<< " the first string is "<<endl;
+    cin>>s1;
+    cout<< " the second string is "<<endl;
+    cin>>s;
+    cout<< " the third string is "<<endl;
+    cin>>s3;
+    for(i=0;i<s1.length();i++)
+    {
+      if(s1[i]=='a'||s1[i]=='e'||s1[i]=='i'||s1[i]=='o'||s1[i]=='u'||s1[i]=='A'||s1[i]=='E'||s1[i]=='I'||s1[i]=='O'||s1[i]=='U')
+        s1[i]='%';
+
+    }
+    cout<<s1<<endl;
+    for(i=0;i<s.length();i++)
+    {
+      if(s[i]!='a'&&s[i]!='e'&&s[i]!='i'&&s[i]!='o'&&s[i]!='u'&&s[i]!='A'&&s[i]!='E'&&s[i]!='I'&&s[i]!='O'&&s[i]!='U')
+        s[i]='#';
+    }
+    cout<<s<<endl;
+    for(i=0;i<s3.length();i++)
+    {
+        if(s3[i]>=97&&s3[i]<=122)
+            s3[i]=s3[i]-32;
+    }
+    cout<<s3<<endl;
+    //transform(s3.begin(),s3.end(),s3.begin(),::toupper);
+    cout<<s3<<endl;
+
+    return 0;
+}
+input:
+how
+are
+you
+
+output:
+H%w
+A#e
+YOU

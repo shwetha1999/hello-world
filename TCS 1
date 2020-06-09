@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {int i;
-    string s1,s,s3;
+    string s1,s,s3,s4;
     cout<< " the first string is "<<endl;
     cin>>s1;
     cout<< " the second string is "<<endl;
@@ -32,6 +32,8 @@ int main()
     cout<<s3<<endl;
     //transform(s3.begin(),s3.end(),s3.begin(),::toupper);
     cout<<s3<<endl;
+    s4=s1+s+s3;
+    cout<< " the concatenated string is "<<s4<<endl;
 
     return 0;
 }
@@ -41,6 +43,7 @@ are
 you
 
 output:
-H%w
-A#e
+h%w
+a#e
 YOU
+h%wa#eYOU

@@ -11,3 +11,148 @@ int main()
 }
  output:
  1 1 2 3
+
+
+
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  array<int,6>arr;
+  arr={1,2,3,4,5,6};
+  int n=sizeof(arr)/sizeof(arr[0]);
+  for(int i=0;i<n;i++)
+  {
+
+      cout<< arr.at(i)<<" ";
+
+  }
+  cout<< endl;
+  return 0;
+}
+
+
+
+#include<iostream>
+#include<array> // for front() and back()
+using namespace std;
+int main()
+{
+    array<int,6> ar = {1, 2, 3, 4, 5, 6};
+    cout << "First element of array is : ";
+    cout << ar.front() << endl;
+    cout << "Last element of array is : ";
+    cout << ar.back() << endl;
+
+    return 0;
+    
+    
+    
+    
+    
+    #include<iostream>
+#include<array> 
+using namespace std;
+int main()
+{
+    array<int,6> ar = {1, 2, 3, 4, 5, 6};
+
+    cout << ar.size() << endl;
+    cout<< sizeof(ar)<<endl;
+    cout << ar.max_size() << endl;
+
+    return 0;
+
+}
+output:
+6
+24
+6
+
+
+
+
+
+#include<iostream> 
+#include<array> // for swap() and array 
+using namespace std; 
+int main() 
+{ 
+  
+    // Initializing 1st array 
+    array<int,6> ar = {1, 2, 3, 4, 5, 6}; 
+  
+    // Initializing 2nd array 
+    array<int,6> ar1 = {7, 8, 9, 10, 11, 12}; 
+  
+    // Printing 1st and 2nd array before swapping 
+    cout << "The first array elements before swapping are : "; 
+    for (int i=0; i<6; i++) 
+    cout << ar[i] << " "; 
+    cout << endl; 
+    cout << "The second array elements before swapping are : "; 
+    for (int i=0; i<6; i++) 
+    cout << ar1[i] << " "; 
+    cout << endl; 
+  
+    // Swapping ar1 values with ar 
+    ar.swap(ar1); 
+  
+    // Printing 1st and 2nd array after swapping 
+    cout << "The first array elements after swapping are : "; 
+    for (int i=0; i<6; i++) 
+    cout << ar[i] << " "; 
+    cout << endl; 
+    cout << "The second array elements after swapping are : "; 
+    for (int i=0; i<6; i++) 
+    cout << ar1[i] << " "; 
+    cout << endl; 
+  
+    return 0; 
+  
+} 
+Output:
+
+The first array elements before swapping are : 1 2 3 4 5 6 
+The second array elements before swapping are : 7 8 9 10 11 12 
+The first array elements after swapping are : 7 8 9 10 11 12 
+The second array elements after swapping are : 1 2 3 4 5 6 
+
+
+
+
+
+#include<iostream> 
+#include<array> // for fill() and empty() 
+using namespace std; 
+int main() 
+{ 
+  
+    // Declaring 1st array 
+    array<int,6> ar; 
+  
+    // Declaring 2nd array 
+    array<int,0> ar1; 
+  
+    // Checking size of array if it is empty 
+    ar1.empty()? cout << "Array empty": 
+        cout << "Array not empty"; 
+    cout << endl; 
+  
+    // Filling array with 0 
+    ar.fill(0); 
+  
+    // Displaying array after filling 
+    cout << "Array after filling operation is : "; 
+    for ( int i=0; i<6; i++) 
+        cout << ar[i] << " "; 
+  
+    return 0; 
+  
+} 
+Output:
+
+Array empty
+Array after filling operation is : 0 0 0 0 0 0 

@@ -156,3 +156,33 @@ Output:
 
 Array empty
 Array after filling operation is : 0 0 0 0 0 0 
+
+
+
+
+//reverse of an array
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int i;
+ array<int,5>arr1;
+ for(i=0;i<5;i++)
+ {
+    cin>> arr1.at(i);
+ }
+ for(i=0;i<5;i++)
+ {
+    cout<< arr1.at(i)<<" ";
+ }
+ cout<<endl;
+ reverse(arr1.begin(),arr1.end());
+ for(i=0;i<5;i++)
+ {
+    cout<< arr1.at(i)<<" ";
+ }
+
+    return 0;
+}

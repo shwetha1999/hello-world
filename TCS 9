@@ -1,0 +1,28 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char a[10][9]={"break","defer","else","for","if","map","var","return","struct","continue"};
+    char input[10];
+    int flag=0,i;
+    cout<<"enter the input key"<<endl;
+    cin>>input;
+    for( i=0;i<16;i++)
+    {
+      if(strcmp(input,a[i])==0)
+      {
+      flag=1;
+      break;
+      }
+
+    }
+    if(flag==1)
+        cout<<input<<" "<<"is a keyword"<<endl;
+    else
+        cout<<input<<" "<<"is a not keyword"<<endl;
+
+    return 0;
+}
+
+

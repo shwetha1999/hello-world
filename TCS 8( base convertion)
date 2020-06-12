@@ -1,0 +1,29 @@
+#include <iostream>
+#include <bits/stdc++.h>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+  string num;
+  int i,hex=0,len,r;
+  cout<<"enter a hexadecimal number"<<endl;
+  getline(cin,num);
+  cout<<num<<endl;
+  len=num.length();
+  cout<<len<<endl;
+  for(i=0;i<=len;i++)
+  {
+     len--;
+     if(num[i]>=0 && num[i]<=9)
+     r=num[i]-48;
+     else if(num[i]>='A' && num[i]<='F')
+     r=num[i]-55;
+     else if(num[i]>='a' && num[i]<='f')
+     r=num[i]-87;
+     hex=hex+r*pow(16,len);
+
+  }
+  cout<<hex<<endl;
+   return 0;
+}

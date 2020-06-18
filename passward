@@ -1,0 +1,37 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    char pass[32];
+    char a;
+    int i;
+    cout<<"enter the passward"<<endl;
+    for(i=0;;)
+    {
+      a=getch();
+      if((a>='a' && a<='z')||(a>='a' && a<='z')||(a>='0' && a<='9'))
+        {
+          pass[i]=a;
+          i++;
+          cout<<" * ";
+        }
+      if(a=='\b' && i>=1)
+       {
+        cout<<"\b"<<endl;
+        i--;
+       }
+       if(a=='\r')
+       {
+           pass[i]='\0';
+           break;
+       }
+    }
+    cout<<endl;
+    if(strcmp(pass,"mypass")==0)
+      cout<<"valid"<<endl;
+    else
+      cout<<"invalid"<<endl;
+    return 0;
+}

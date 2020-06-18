@@ -35,3 +35,34 @@ int main()
       cout<<"invalid"<<endl;
     return 0;
 }
+
+
+
+
+
+#include<iostream>
+#include<bits/stdc++.h>
+#include<stdio.h>
+#include<conio.h>
+using namespace std;
+ int main()
+{
+    int i=0;
+   char pwd[30],ch,pass[30];
+  cout<<"enter passward"<<endl;
+  while( (ch = getch() )!= 13)
+    {
+        pass[ i ++ ] = ch;
+        printf("*");
+    }
+    pass[ i ] = '\0';
+
+   strcpy( pwd,pass );
+   if( strcmp ( pwd , "un100")==0 )
+    cout<<"valid"<<endl;
+   else
+    cout<<"invalid"<<endl;
+   return 0;
+}
+
+

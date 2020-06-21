@@ -12,3 +12,27 @@ int main()
     }
     return 0;
 }
+
+
+
+
+#include<bits/stdc++.h>
+#include<conio.h>  //for kbhit();
+#include<windows.h>//to declare Sleep()
+using namespace std;
+int main()
+{
+    int timetaken;
+    clock_t s,e;
+    s=clock();
+    while(!kbhit())
+        {
+        cout<<"shwetha h"<<endl;
+        Sleep(1000);
+        }
+    e=clock();
+    timetaken=(float)(e-s)/CLOCKS_PER_SEC;
+    cout<<timetaken<<endl;
+    getch();
+
+}

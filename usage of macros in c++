@@ -1,0 +1,26 @@
+#include<iostream>
+#define f(a,b) a+b
+using namespace std;
+int main()
+{
+    cout<<f(5,2)<<endl;
+    cout<<f(5.2,2.5)<<endl;
+    return 0;
+
+}
+
+
+#include<bits/stdc++.h>
+#define swap(a,b,type){type t; t=a;a=b;b=t;}
+using namespace std;
+int main()
+{ int t;
+int x=10,y=20;
+float f1=10,f2=20.3;
+     swap(x,y,int);
+      swap(f1,f2,float);
+
+    cout<<x<<" "<<y<<endl;
+    cout<<f1<<" "<<f2<<endl;
+    return 0;
+}

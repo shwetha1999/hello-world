@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+#include<time.h>
+#include<stdlib.h>
+#include<conio.h>
+using namespace std;
+int main( )
+{
+ int magic , guess;
+ float elapsed;
+ clock_t s , e;
+ srand(time(NULL));
+ magic = 1+ (rand()%100);
+ s = clock();
+ while(elapsed <= 30)
+ {
+     e = clock();
+     elapsed = (float)(e-s)/CLK_TCK;  // elapsed = (float)(e-s)/CLOCKS_PER_SEC;
+   cout<<"guss no"<<endl;
+   cin>>guess;
+     if(guess == magic && elapsed <= 30 )
+     {
+        cout<<"u won"<<endl;
+
+     }
+     else if( guess > magic )
+        cout<<"try lesser no"<<endl;
+     else
+       cout<<"try greater no"<<endl;
+ }
+  cout<<"Try next time , correct number "<< magic<<endl;
+  getch();
+ return 0;
+}

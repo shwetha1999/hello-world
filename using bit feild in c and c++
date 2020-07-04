@@ -25,3 +25,45 @@ int main()
     int n=sizeof(struct ledcheck);
     cout<<n;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    bitset<8> b;
+    bitset<4> b1(string("1111"));//initialization of  bits    
+    cout<<b1<<endl;         1111
+    cout << b << endl;      00000000
+    b[1] = 1;               
+    cout << b << endl;      00000010
+    cout << b.size() << endl;//size of bit     8
+    cout << b.count() << endl;//no of bits set    1
+    b.reset();//reset all bits to 0;         00000000
+    b[7] = 1;                               
+    cout << b << endl;                      10000000
+    b = b >> 2;                             
+    cout << b << endl;                      00100000
+    b=128;                                   10000000
+    b[1]=1;//to set a perticular bits;       
+    cout<<b<<endl;                           10000010
+    if(b.test(1))//to check if a perticular bit is set;
+        cout<<" bit is set"<<endl;
+    else
+        cout<<" bit is not set"<<endl;
+    cout << b.set()<< endl;//set all the bit.... 11111111
+    return 0;
+}
+

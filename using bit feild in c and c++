@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+struct ledcheck
+{
+  char c1:1;
+  char c2:1;
+  char c3:1;
+  char c4:1;
+  char c5:1;
+  char c6:1;
+  char c7:1;
+  char c8:1;
+};
+
+int main()
+{
+    struct ledcheck led;
+    led.c1=1;
+    led.c2=0;
+    led.c3=1;
+    led.c4=1;
+    led.c5=1;
+     led.c6=1; led.c7=1; led.c8=1;
+    int n=sizeof(struct ledcheck);
+    cout<<n;
+}

@@ -67,3 +67,25 @@ int main()
     return 0;
 }
 
+
+
+
+
+
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int number =3;
+    int bitpos=2;
+    number = number|(1<<bitpos);//for seting a bit use logical or operation
+    cout<<number<<endl;
+     number = number & ~(1<<bitpos);//for unseting a bit use logical and operation
+    cout<<number<<endl;
+
+    number = number ^(1<<bitpos);//for unseting a bit use logical and operation
+    cout<<number<<endl;
+
+}
+

@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   cout<<"Date is  :"<<__DATE__<<endl;
+
+   cout<<"Time  is  :"<<__TIME__<<endl;
+}

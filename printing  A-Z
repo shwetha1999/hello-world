@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  char ch;     //int ch; to use putschar;
+  for(ch='A';ch<='Z';ch++)
+    cout<<ch;   ///putchar(ch);
+  return 0;
+
+}
+

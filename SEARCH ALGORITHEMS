@@ -21,7 +21,7 @@ int main()
    {
      if(*(p+i)==item)
      {
-         flag=1;
+         flag=1;                     //linear search using pointers
          break;
      }
    }
@@ -33,3 +33,107 @@ int main()
 
  return 0;
 }
+
+
+
+
+
+
+
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+using namespace std;
+int linearsearch(int arr[],int _size,int searchvalue)
+{
+    for(int i=0;i<_size;i++)
+    {
+      if(searchvalue == arr[i])
+      {
+        return i;
+      }                                    //linear search 
+    }
+    return -1;
+}
+int main()
+{
+   int a[]={15,14,12,13,45,56};
+   int i,value;
+   cout<<"enter the search key"<<endl;
+   cin>>value;
+   int result = linearsearch(a,6,value);
+   if(result >=0)
+   cout<<"the key"<<value<<" is found at position"<<" "<<(result+1)<<endl;
+   else
+    cout<<"the key not found"<<endl;
+   return 0;
+}
+
+
+
+// C++ program to implement recursive Binary Search 
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+// A iterative binary search function. It returns 
+// location of x in given array arr[l..r] if present, 
+// otherwise -1 
+int binarySearch(int arr[], int l, int r, int x) 
+{ 
+    while (l <= r)
+    { 
+        int m = l + (r - l) / 2; 
+  
+        // Check if x is present at mid 
+        if (arr[m] == x) 
+            return m; 
+  
+        // If x greater, ignore left half 
+        if (arr[m] < x) 
+            l = m + 1; 
+  
+        // If x is smaller, ignore right half 
+        else
+            r = m - 1; 
+    } 
+  
+    // if we reach here, then element was 
+    // not present 
+    return -1; 
+} 
+
+
+
+
+  
+int main(void) 
+{ 
+    int arr[] = { 2, 3, 4, 10, 40 }; 
+    int x = 10; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+    int result = binarySearch(arr, 0, n - 1, x); 
+    (result == -1) ? cout << "Element is not present in array"
+                   : cout << "Element is present at index " << result; 
+    return 0; 
+} 
+
+Output :
+Element is present at index 3
+
+
+
+
+
+differencd between binary search and linearsearch
+
+binary search
+ worst case time complexity to O(Log  2 n).
+ best case center elemnt o(1)
+array should be sorted
+acess is faster
+only single dimentional array is used
+
+linear search
+ best time complexity    first elemnt o(1)
+random array can be used 
+worst time  case complexity o(n) 

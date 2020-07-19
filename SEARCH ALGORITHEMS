@@ -1,0 +1,35 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+using namespace std;
+int main()
+{
+   int *p,n,i,item,flag=0;
+   cout<<"enter the size "<<endl;
+   cin>>n;
+   p=(int*)malloc(n*sizeof(int));
+   cout<<"enter the element"<<endl;
+   for(i=0;i<n;i++)
+   {
+       scanf("%d",p+i);
+   }
+
+   cout<<"enter the item to be searched"<<endl;
+   cin>>item;
+
+   for(i=0;i<n;i++)
+   {
+     if(*(p+i)==item)
+     {
+         flag=1;
+         break;
+     }
+   }
+   if(flag==1)
+   cout<<" the given item is found at"<<" "<<(i+1) <<endl;
+
+   else
+    cout<<"element not found"<<endl;
+
+ return 0;
+}

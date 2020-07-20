@@ -1,0 +1,61 @@
+VOID POINTERS
+
+#include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{
+    int n=10;
+    char ch='a';
+    void *ptr=&n;
+    printf("%d\n",*(int*)ptr);
+    ptr=&ch;
+     printf("%c",*(char*)ptr);
+    return 0;
+}
+output:
+10
+a
+ 
+ 
+ void pointer is used in malloc and calloc so only it can be assined to any data type
+ void pointer scan be type casted to use for different data type.
+ 
+ 
+ 
+ NULL POINTER:
+ null pointer is a pointer which does not point to any memeory location.It represents an invalid memeory location.
+ when null value is assugned to a pointer it is consisdered as null pointer
+ 
+ int main()
+ {
+ int *ptr=NULL;
+ return 0;
+ }
+ 
+ 
+ it is usefull for handling errors in malloc:
+ value of null is 0;
+ 
+ 
+ int main()
+ {
+ int *ptr;
+ ptr=(int*)malloc(2*(sizeof(int));
+ if(ptr==NULL)
+ printf("memeory couldnot be allocated");
+ else
+  printf("memeory   allocated");
+  return 0;
+ }
+ 
+ DANGLING POINTER:
+ a pinter which points to non existing memoery location:
+ even after free(p)
+pointer points to the same memory location 
+to solve this probelm use this
+
+free(p)
+p=NULL;
+ 

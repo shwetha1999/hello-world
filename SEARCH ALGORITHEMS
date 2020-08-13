@@ -127,13 +127,16 @@ Element is present at index 3
 differencd between binary search and linearsearch
 
 binary search
- worst case time complexity to O(Log  2 n).
- best case center elemnt o(1)
+hight of tree= log n
+worst case time complexity to : searching for the leaf that is first or last  element (minimum worst case time when balenced tree)  = log n
+max worst case time :(when tree has a single branch) =n
+best case center(root) elemnt : o(1)
 array should be sorted
 acess is faster
 only single dimentional array is used
 
 linear search
- best time complexity    first elemnt o(1)
-random array can be used 
+best time complexity    first elemnt o(1)
 worst time  case complexity o(n) 
+Average case: All possible case time/no of cases   =n(n+1)/(n*2) =n+1/2
+random array can be used 

@@ -128,8 +128,8 @@ differencd between binary search and linearsearch
 
 binary search
 hight of tree= log n
-worst case time complexity to : searching for the leaf that is first or last  element (minimum worst case time when balenced tree)  = log n
-max worst case time :(when tree has a single branch) =n
+(lower tight bound)worst case time complexity to : searching for the leaf that is first or last  element (minimum worst case time when balenced tree)  = log n
+(upper tight bound)max worst case time :(when tree has a single branch) =n
 best case center(root) elemnt : o(1)
 array should be sorted
 acess is faster

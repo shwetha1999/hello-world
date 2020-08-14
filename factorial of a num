@@ -12,3 +12,27 @@ int main()
     printf("%d",fact);
   return 0;
 }
+
+
+
+#include <iostream>
+using namespace std;
+int fact(int);
+int main()
+{
+    int n;
+    cout<<"enter the value of n"<<endl;
+    cin>>n;
+    cout<<"the factorial of a number is"<<" "<<fact(n);
+
+
+}
+int fact(int n)
+{
+  if(n==1)
+        return 1;
+    else
+        return n*fact(n-1);
+
+}
+

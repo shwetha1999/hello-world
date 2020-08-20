@@ -1,3 +1,4 @@
+00000
 BUBBLE SOR
 
 #include <stdio.h> 
@@ -62,6 +63,12 @@ worst case :when array is in reversed order
 o(n^2)
 average case:
 o(n^2)
+Axillary space complexity:the memory occupied by the temporary variable:
+o(1)
+space complextity:
+o(n)
+
+It is used with the almost sorted array .When only one elemnt is to be sorted.In computer graphics we use this.
 
 
 

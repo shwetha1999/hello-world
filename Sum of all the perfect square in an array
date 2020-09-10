@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+#include<math.h>
+using namespace std;
+int perfectsquare(int num)
+{
+ int j,i;
+ float f;
+  f=sqrt((double)num) ;
+  i=f;
+  if(i==f)
+    return num;
+    else
+    return 0;
+}
+
+int main()
+{
+  int n,i,sum=0;
+  cin>>n;
+  int arr[n];
+  for (int i=0;i<n;i++)
+  {
+  cin>>arr[i];
+  }
+  for(i=0;i<n;i++)
+  {
+  sum=sum+perfectsquare(arr[i]);
+  }
+  cout<<sum;
+    return 0;
+}

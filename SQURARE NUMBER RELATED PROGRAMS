@@ -1,0 +1,75 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace  std;
+int * squarenumber(int *arr,int len)
+{
+int arr1[100];
+int i,j,k;
+float f;
+for(i=0;i<len;i++)
+{
+f=sqrt((double)arr[i]);
+j=f;
+if(f==j)
+{
+ arr1[k]=arr[i];
+cout<<arr1[k]<<" ";
+}
+else
+continue;
+}
+return arr1;
+}
+
+
+int main()
+{
+int arr[60],i,n;
+cin>>n;
+for(i=0;i<n;i++)
+{
+   cin>> arr[i];
+}
+
+squarenumber(arr,n);
+return 0;
+}
+
+
+SUM OF NATURAL NUMBERS IN AN ARRAY
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace  std;
+int  squarenumber(int *arr,int len)
+{
+int arr1[100],sum=0;
+int i,j,k;
+float f;
+for(i=0;i<len;i++)
+{
+f=sqrt((double)arr[i]);
+j=f;
+if(f==j)
+{
+ sum=sum+arr[i];
+}
+else
+continue;
+}
+
+
+return sum;
+}
+int main()
+{
+int arr[60],i,n;
+cin>>n;
+for(i=0;i<n;i++)
+{
+   cin>> arr[i];
+}
+
+cout<<squarenumber(arr,n);
+return 0;
+}
